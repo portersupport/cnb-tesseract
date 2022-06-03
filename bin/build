@@ -1,5 +1,5 @@
 #!/bin/bash
-BUILD_DIR="."
+BUILD_DIR="/workspace"
 CACHE_DIR=$1
 LAYERS_DIR=$1
 ENV_DIR="/platform/env/"
