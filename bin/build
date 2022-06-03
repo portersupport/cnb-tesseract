@@ -43,6 +43,7 @@ then
 fi
 
 echo "Building runtime environment for Tesseract-OCR"
+mkdir -p $(dirname $PROFILE_PATH)
 echo "export PATH=\"$TESSERACT_OCR_DIR/bin:\$PATH\"" > $PROFILE_PATH
 echo "export LD_LIBRARY_PATH=\"$TESSERACT_OCR_DIR/lib:\$LD_LIBRARY_PATH\"" >> $PROFILE_PATH
 echo "export TESSDATA_PREFIX=\"$TRAINING_DATA_DIR/\"" >> $PROFILE_PATH
