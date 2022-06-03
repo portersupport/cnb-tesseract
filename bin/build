@@ -39,6 +39,6 @@ fi
 
 # No runtime environment - these are set as runtime env vars in the container
 # echo "Building runtime environment for Tesseract-OCR"
-export PATH="$TESSERACT_OCR_DIR/bin:\$PATH"
-export LD_LIBRARY_PATH="$TESSERACT_OCR_DIR/lib:\$LD_LIBRARY_PATH"
+export PATH="$TESSERACT_OCR_DIR/bin:$PATH"
+export LD_LIBRARY_PATH="$TESSERACT_OCR_DIR/lib:$LD_LIBRARY_PATH"
 export TESSDATA_PREFIX="$TRAINING_DATA_DIR/"
